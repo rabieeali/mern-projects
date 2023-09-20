@@ -35,11 +35,10 @@ const crushSlice = createSlice({
     reducers: {
         getCrushById: (state, action) => {
             const foundCrush = state.crushList.find(c => c._id == action.payload)
-            console.log(action.payload)
             if (foundCrush) {
                 state.crush = foundCrush
             } else {
-                console.log('we did not your crush!')
+                console.log('could not find your crush!')
             }
         }
     },
