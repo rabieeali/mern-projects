@@ -48,7 +48,7 @@ export class CrushController {
         return res.status(200).json(responser(200, 'crush updated successfully', updatedCrush))
     }
 
-    //@DELETE/:id
+    //@ DELETE/:id
     async deleteCrush(req: Request, res: Response) {
         const { id } = req.params
         const isIdValid = isValidObjectId(id)
